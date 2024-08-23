@@ -13,7 +13,7 @@ class Solution:
 
         def backtrack(r):
             if r == n:
-                #happy case, add the board to the result. Convert each row of the board to strings
+                #happy case, incr res by 1
                 self.res += 1
                 return
             #we did not place all of the n queens
@@ -37,4 +37,4 @@ class Solution:
         backtrack(0)
         return self.res
 sol = Solution()
-print(sol.totalNQueens(14))
+print(sol.totalNQueens(11))
